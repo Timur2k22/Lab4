@@ -25,9 +25,9 @@ public class DataManipulation {
     public void loadData(String path) throws IOException, InvalidFormatException {
         Provider provider = new Provider(path);
         provider.openFile();
-        valuesMap.put("x", provider.getValues("Вариант 2", 0));
-        valuesMap.put("y", provider.getValues("Вариант 2", 1));
-        valuesMap.put("z", provider.getValues("Вариант 2", 2));
+        valuesMap.put("x", provider.getValues("Вариант 3", 0));
+        valuesMap.put("y", provider.getValues("Вариант 3", 1));
+        valuesMap.put("z", provider.getValues("Вариант 3", 2));
         provider.close();
         loadResults();
     }
